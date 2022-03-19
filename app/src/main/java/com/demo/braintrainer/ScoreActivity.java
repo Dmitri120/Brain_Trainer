@@ -22,7 +22,7 @@ public class ScoreActivity extends AppCompatActivity {
             int result =intent.getIntExtra("result",0);
             SharedPreferences preferences= PreferenceManager.getDefaultSharedPreferences(this);
             int max = preferences.getInt("max",0);
-            String score = String.format("Ваш результат: %s\nМфксимальный результат: %s",result,max);
+            String score = String.format("Ваш результат: %s\nМаксимальный результат: %s",result,max);
             textViewResult.setText(score);
         }
     }
